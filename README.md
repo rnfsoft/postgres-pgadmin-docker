@@ -1,4 +1,4 @@
-# postgres-pgadmin-docker
+# Run Postgres and Pgadmin on docker
 
 
 Make a directory for volume: 
