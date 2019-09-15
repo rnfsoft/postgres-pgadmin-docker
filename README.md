@@ -17,10 +17,10 @@ Find an IP address:
 
 	$docker network ls
 	$docker network inspect bridge
-    "Name": "pg-docker",
-    "EndpointID": "",
-    "MacAddress": "",
-    "IPv4Address": "172.17.0.2/16",
+	    "Name": "pg-docker",
+	    "EndpointID": "",
+	    "MacAddress": "",
+	    "IPv4Address": "172.17.0.2/16",
 
 Browser:
 	
@@ -28,13 +28,13 @@ Browser:
 	Email: user@domain.com
 	PW: SuperSecret
   
-Pgadmin-Connect Server
+Pgadmin-Connect Server:
 	
 	Name: pg-docker
 	Connection:
-    Host name/address: 172.17.0.12
-    Username: postgres
-    PW: docker
+	    Host name/address: 172.17.0.12
+	    Username: postgres
+	    PW: docker
   
   
 Reference:
