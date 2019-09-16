@@ -8,10 +8,12 @@ Make a directory for volume:
 Run Postgres DB:
 
 	$docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
+	
+	$docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v d:/docker/volumes/postgres:/var/lib/postgresql/data postgres (windows)
 
 Run PgAdmin:
 
-	$docker run -p 80:80  -e "PGADMIN_DEFAULT_EMAIL=user@domain.com" -e "PGADMIN_DEFAULT_PASSWORD=SuperSecret" -d dpage/pgadmin4
+	$docker run -p 80:80 --name pgadmin-docker -e "PGADMIN_DEFAULT_EMAIL=user@domain.com" -e "PGADMIN_DEFAULT_PASSWORD=SuperSecret" -d dpage/pgadmin4
  
 Find an IP address:
 
