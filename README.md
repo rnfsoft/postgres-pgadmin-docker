@@ -9,7 +9,9 @@ Run Postgres DB:
 
 	$docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
 	
-	$docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v d:/docker/volumes/postgres:/var/lib/postgresql/data postgres (windows)
+	(Windows)	
+	$docker volume create pgdata
+	$docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v pgdata:/var/lib/postgresql/data postgres
 
 Run PgAdmin:
 
