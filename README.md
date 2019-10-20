@@ -36,7 +36,7 @@ Pgadmin-Connect Server:
 	
 	Name: pg-docker
 	Connection:
-	    Host name/address: 172.17.0.12
+	    Host name/address: 172.17.0.2
 	    Username: postgres
 	    PW: docker
   
